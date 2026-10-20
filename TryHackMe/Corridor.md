@@ -17,7 +17,7 @@ Establishing the VPN Connection between Lab Machine and Attacker Machine using O
     ```bash
     openvpn --version
     ```
-    ![Corridor1](./Portfolio/TryHackMe/assets/Corridor1.png)
+    ![Corridor 1](./Assets/Corridor1.png)
     **(Was Installed)**
 
 * Download the config file from THM and proceeded to establish the connection by the OpenVPN terminal command and ping Lab Machine IP to verify reach. 
@@ -35,7 +35,7 @@ Establishing the VPN Connection between Lab Machine and Attacker Machine using O
 ## Process
 
 Now I can access the Lab Machine IP through Firefox and see an image of a corridor with 13 doors:
-    ![Corridor2](./Portfolio/TryHackMe/assets/Corridor2.png)
+    ![Corridor 2](./Assets/Corridor2.png)
 
 The only thing that I can do in this web application is to click on the doors which will take me to an empty room where I can just go back to the previous corridor, but I can see that each room have an unique identifier on the URL e.g:
 * Corridor: <http://10.67.177.23/>
@@ -63,7 +63,7 @@ john --format=raw-md5 hash.txt
 john --show --format=raw-md5 hash.txt
 ```
 This shows me that each hash corresponds to a number on each door.
-    ![Corridor3](./Portfolio/TryHackMe/assets/Corridor3.png)
+    ![Corridor 3](./Assets/Corridor3.png)
 
 Reviewing the explanation of the challenge it says **You have found yourself in a strange corridor. Can you find your way back to where you came?** assuming that I have two options regarding the door where I came from numbers: 14 or 0.
 
@@ -79,7 +79,7 @@ Using the terminal
 to generate the hashes **ab3238922bcc25a6f606eb525ffdc56** and **cfcd208495d565ef66e7dff9f98764da** respectively so I can add those to the URL to check if can access something I shouldn't.
 
 The URL for **14** <http://10.67.177.23/ab3238922bcc25a6f606eb525ffdc56> doesn't work
-    ![Corridor4](./Portfolio/TryHackMe/assets/Corridor4.png)
+    ![Corridor 4](./Assets/Corridor4.png)
 
 I found the **flag** using the hash for **0** <http://10.67.177.23/cfcd208495d565ef66e7dff9f98764da>
-    ![Corridor5](./Portfolio/TryHackMe/assets/Corridor5.png)
+    ![Corridor 5](./Assets/Corridor5.png)

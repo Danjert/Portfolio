@@ -1,6 +1,6 @@
 # Technical Walkthrough: TryHackMe – TakeOver
 
-![TakeOver1](assets/TakeOver1.png)
+![TakeOver1](../Assets/TakeOver1.png)
 
 ## Room Overview & Objectives
 * **Challenge Name:** TakeOver
@@ -25,7 +25,7 @@ sudo openvpn filename.ovpn
 
 **Local Host Resolution:** Attempting to browse directly to https://futurevera.thm resulted in a connection error because isolated CTF domains do not resolve via public DNS. Following the lab prompt hint, the target IP and domain mapping were added to /etc/hosts:
 
-![TakeOver2](assets/TakeOver2.png)
+![TakeOver2](../Assets/TakeOver2.png)
 
 ```bash
 sudo vi /etc/hosts
@@ -35,7 +35,7 @@ sudo vi /etc/hosts
 
 **Initial Verification:** Navigating to https://futurevera.thm in Firefox successfully loaded the landing page, confirming basic HTTPS connectivity and proper local name resolution:
 
-![TakeOver3](assets/TakeOver3.png)
+![TakeOver3](../Assets/TakeOver3.png)
 
 ## Phase 2: Initial Attack Surface Reconnaissance
 To get a better picture of the attack surface, a port scan was executed:
@@ -84,17 +84,17 @@ https://support.futurevera.thm
 ## Phase 4: Vulnerability Analysis & Flag Discovery
 **Analyzing https://blog.futurevera.thm:** Inspection of the blog web application and its SSL/TLS certificate revealed standard configuration parameters with no anomalies:
 
-![TakeOver4](assets/TakeOver4.png)
+![TakeOver4](../Assets/TakeOver4.png)
 
-![TakeOver5](assets/TakeOver5.png)
+![TakeOver5](../Assets/TakeOver5.png)
 
 **Inspecting https://support.futurevera.thm:** Seeing the support page undergoing reconstruction led to a closer look at its SSL/TLS certificate details:
 
-![TakeOver6](assets/TakeOver6.png)
+![TakeOver6](../Assets/TakeOver6.png)
 
 **Subject Alternative Names (SAN):** The certificate contained a suspicious Subject Alternative Name:
 
-![TakeOver7](assets/TakeOver7.png)
+![TakeOver7](../Assets/TakeOver7.png)
 
 ```Plaintext
 secrethelpdesk934752.support.futurevera.thm
@@ -102,7 +102,7 @@ secrethelpdesk934752.support.futurevera.thm
 
 **Resolution:** Accessing the discovered SAN domain redirected browser traffic to an external AWS endpoint, successfully revealing the target flag:
 
-![TakeOver8](assets/TakeOver8.png)
+![TakeOver8](../Assets/TakeOver8.png)
 
 ```Plaintext
 flag{XXXXXXXXXXXXXXXXXX}.s3-website-us-west-3.amazonaws.com

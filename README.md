@@ -13,15 +13,11 @@ The purpose of this repository is to showcase practical cybersecurity projects a
 ## Featured Walkthroughs & Projects
 
 ### TryHackMe
-* **[Corridor](./TryHackMe/Corridor)**
-  * **Overview:** Practical demonstration of Insecure Direct Object Reference (IDOR) vulnerabilities analysis and exploitation within the TryHackMe Corridor room.
-The write-up details the methodology used to inspect web endpoints, analyze hashed identifiers, and escalate access to retrieve restricted assets.
+* **[Corridor - IDOR Vulnerability Assessment](./TryHackMe/Corridor)**
+  * **Overview:** This directory contains the professional security documentation for the Corridor Room assessment, featuring two files: the technical walkthrough, which provides a step-by-step breakdown of the endpoint enumeration, hash reversal, and boundary traversal methodology, and the executive report, which delivers a formal risk assessment mapped to enterprise frameworks including NIST, MITRE ATT&CK, and OWASP Top 10:2025.
 
-* **[TakeOver — Subdomain Takeover & GRC Assessment](./TryHackMe/TakeOver/)**
-  * **Overview:** Practical demonstration of subdomain enumeration and attack surface mapping analysis within the TryHackMe TakeOver room. The write-up details the methodology used to inspect web endpoints, analyze virtual hosts and SSL/TLS certificate metadata, and escalate access via misconfigured assets.
-  * **Directory Contents:**
-    * `TakeOver.md` — Step-by-step technical methodology, terminal commands, and flag verification.
-    * `Executive_Report.md` — Strategic business risk briefing, NIST CSF/SP 800-53 control mappings,Cyber Kill Chain and MITRE ATT&CK alignment.
+* **[TakeOver - Subdomain Takeover Assessment](./TryHackMe/TakeOver/)**
+  * **Overview:** This directory contains the professional security documentation for the Takeover Room assessment, featuring two files: the technical walkthrough, which provides a step-by-step breakdown of subdomain enumeration via Gobuster, SSL/TLS certificate analysis, and orphaned DNS CNAME record verification, and the executive report, which delivers a formal risk assessment mapped to enterprise frameworks including NIST, MITRE ATT&CK, and the Cyber Kill Chain.
 
 ---
 

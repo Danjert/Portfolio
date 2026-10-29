@@ -74,9 +74,10 @@ To align findings with enterprise governance and risk compliance standards, the 
 
 ### Threat Intelligence & TTP Mapping
 * **MITRE ATT&CK® Matrix for Enterprise:** [Enterprise Matrix Overview](https://attack.mitre.org/matrices/enterprise/)
-* **Technique T1584.001 (Compromise Infrastructure: Domains):** [T1584.001 Reference & Mitigation](https://attack.mitre.org/techniques/T1584/001/)
-* **Technique T1592.002 (Gather Victim Host Information: Software Identity / Certificates):** [T1592.002 Reference](https://attack.mitre.org/techniques/T1592/002/)
 * **Technique T1590.002 (Gather Victim Network Information: Domain Properties):** [T1590.002 Reference](https://attack.mitre.org/techniques/T1590/002/)
+* **Technique T1592.002 (Gather Victim Host Information: Software Identity / Certificates):** [T1592.002 Reference](https://attack.mitre.org/techniques/T1592/002/)
+* **Technique T1589 (Gather Victim Identity Information):** [T1589 Reference](https://attack.mitre.org/techniques/T1589/)
+* **Technique T1584.001 (Compromise Infrastructure: Domains):** [T1584.001 Reference & Mitigation](https://attack.mitre.org/techniques/T1584/001/)
 
 ### Governance, Risk, & Compliance (GRC)
 * **NIST Cybersecurity Framework (CSF 2.0):** [NIST CSF Resource Center](https://www.nist.gov/cyberframework)

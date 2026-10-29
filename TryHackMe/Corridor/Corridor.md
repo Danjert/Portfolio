@@ -23,7 +23,7 @@ According to OWASP Cheat Sheet Series Insecure Direct Object Reference (IDOR) is
     openvpn --version
     ```
 
-![OpenVpn Version](../assets/Corridor1.png)
+![OpenVpn Version](../Assets/Corridor1.png)
 
 * Established the tunnel using the downloaded configuration:
     ```bash
@@ -41,7 +41,7 @@ According to OWASP Cheat Sheet Series Insecure Direct Object Reference (IDOR) is
 
 * **Initial Discovery:** Navigating to `http://10.67.177.23/` via Firefox reveals an interface displaying a corridor with 13 doors.
 
-  ![Corridor Initial View](../assets/Corridor2.png)
+  ![Corridor Initial View](../Assets/Corridor2.png)
 
 * **Observation:** Clicking on the doors routes the user to empty rooms, each containing a unique identifier in the URL path. For example:
   * First door to the left: `http://10.67.177.23/c4ca4238a0b923820dcc509a6f75849b`
@@ -73,7 +73,7 @@ john --format=raw-md5 hash.txt
 john --show --format=raw-md5 hash.txt
 ```
 
-![Corridor Layout](../assets/Corridor3.png)
+![Corridor Layout](../Assets/Corridor3.png)
 
 **Finding:** The hashes correspond directly to sequential integer values (representing door numbers 1 through 13).
 
@@ -93,9 +93,9 @@ john --show --format=raw-md5 hash.txt
 
 Testing path **14** `ab3238922bcc25a6f606eb525ffdc56`: Returned a not found state.
 
-![not Found](../assets/Corridor4.png)
+![not Found](../Assets/Corridor4.png)
 
 Testing path **0** `cfcd208495d565ef66e7dff9f98764da`: Successfully resolved and revealed the `flag`.
 
-![Flag](../assets/Corridor5.png)
+![Flag](../Assets/Corridor5.png)
 

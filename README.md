@@ -12,6 +12,10 @@ The purpose of this repository is to showcase practical cybersecurity projects a
 
 ## Featured Walkthroughs & Projects
 
+### Local Enterprise SOC Environment
+* **[Module 1 - Firewall Deployment](./Local_Enterprise_SOC_Lab/Module1_Firewall_Deployment.md)**
+  * **Overview:** This documentation details the design, deployment, and validation of an enterprise-grade OPNsense perimeter firewall, featuring multi-zone network segmentation, static IP architecture, explicit stateful filtering matrices, and Splunk SIEM syslog telemetry verification.
+
 ### TryHackMe
 * **[Corridor - IDOR Vulnerability Assessment](./TryHackMe/Corridor)**
   * **Overview:** This directory contains the professional security documentation for the Corridor Room assessment, featuring two files: the technical walkthrough, which provides a step-by-step breakdown of the endpoint enumeration, hash reversal, and boundary traversal methodology, and the executive report, which delivers a formal risk assessment mapped to enterprise frameworks including NIST, MITRE ATT&CK, and OWASP Top 10:2025.

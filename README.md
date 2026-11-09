@@ -27,5 +27,5 @@ The purpose of this repository is to showcase practical cybersecurity projects a
 
 ##  Connect
 
-[LinkedIn](https://www.linkedin.com/in/daniel-alejandro-jerez-torres-3932352a2/)
+[LinkedIn](https://www.linkedin.com/in/daniel-alejandro-jerez-torres/)
 [GitHub](https://github.com/Danjert)

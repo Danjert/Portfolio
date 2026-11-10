@@ -16,6 +16,9 @@ The purpose of this repository is to showcase practical cybersecurity projects a
 * **[Module 1 - Firewall Deployment](./Local_Enterprise_SOC_Lab/Module1_Firewall_Deployment.md)**
   * **Overview:** This documentation details the design, deployment, and validation of an enterprise-grade OPNsense perimeter firewall, featuring multi-zone network segmentation, static IP architecture, explicit stateful filtering matrices, and Splunk SIEM syslog telemetry verification.
 
+* **[Module 2 - Splunk SIEM Deployment](./Local_Enterprise_SOC_Lab/Module_2_Splunk_Deployment.md)**
+  * **Overview:** This documentation covers the provisioning, configuration, and hardening of an Ubuntu Server running Splunk Enterprise within the SOC lab. It highlights least-privilege service account management, OS performance tuning (swap, sysctl, file descriptors, UFW), dedicated index creation (`opnsense`), UDP syslog ingestion (`5140`), and the deployment of the Splunk Add-on for OPNsense (`TA-opnsense`) for Common Information Model (CIM) field normalization and end-to-end pipeline verification.
+
 ### TryHackMe
 * **[Corridor - IDOR Vulnerability Assessment](./TryHackMe/Corridor)**
   * **Overview:** This directory contains the professional security documentation for the Corridor Room assessment, featuring two files: the technical walkthrough, which provides a step-by-step breakdown of the endpoint enumeration, hash reversal, and boundary traversal methodology, and the executive report, which delivers a formal risk assessment mapped to enterprise frameworks including NIST, MITRE ATT&CK, and OWASP Top 10:2025.

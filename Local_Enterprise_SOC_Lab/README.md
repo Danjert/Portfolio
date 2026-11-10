@@ -22,7 +22,7 @@ The laboratory enforces strict Layer 3 isolation across four dedicated virtual s
 Local_Enterprise_SOC_Lab/
 ├── README.md                             # Repository overview & file index
 ├── Module1_Firewall_Deployment.md        # Perimeter provisioning & ACLs
-├── Module2_Splunk_SIEM_Deployment.md     # (Under Construction) SIEM setup & syslog
+├── Module2_Splunk_SIEM_Deployment.md     # SIEM setup, indexing & OPNsense TA
 ├── Module3_Endpoint_Telemetry_Harden.md  # (Under Construction) Windows audit & Sysmon
 └── Module4_Threat_Simulations/           # (Under Construction) Adversary simulations
     ├── 01_Reconnaissance_Port_Scanning.md
@@ -37,8 +37,8 @@ Local_Enterprise_SOC_Lab/
 * **[Module 1 - Firewall Deployment](./Module1_Firewall_Deployment.md)**
   * **Contents:** Details the complete deployment of the OPNsense firewall virtual machine. It outlines virtual network interface card (vNIC) mapping, static IP addressing schemas across all four zones, and the comprehensive stateful firewall rule matrix (ACLs) enforcing network segmentation. It also documents initial syslog export validation.
 
-* **`Module2_Splunk_SIEM_Deployment.md`**
-  * **Contents:** (Under Construction)
+* **[Module 2 - Splunk Deployment](./Module_2_Splunk_Deployment.md)**
+  * **Contents:** Documents the provisioning and hardening of the central Ubuntu Server running Splunk Enterprise (`10.0.100.10`). Covers OS performance tuning (4GB swap, limits.conf, sysctl), unprivileged service account management, UFW firewall rules, dedicated `opnsense` index creation, UDP syslog listener (`5140`), and the installation/configuration of the Splunk Add-on for OPNsense (`TA-opnsense`) for CIM-compliant field normalization.
 
 * **`Module3_Endpoint_Telemetry_Harden.md`**
   * **Contents:** (Under Construction)

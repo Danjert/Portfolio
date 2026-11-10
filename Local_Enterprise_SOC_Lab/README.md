@@ -37,11 +37,7 @@ Local_Enterprise_SOC_Lab/
 * **[Module 1 - Firewall Deployment](./Module1_Firewall_Deployment.md)**
   * **Contents:** Details the complete deployment of the OPNsense firewall virtual machine. It outlines virtual network interface card (vNIC) mapping, static IP addressing schemas across all four zones, and the comprehensive stateful firewall rule matrix (ACLs) enforcing network segmentation. It also documents initial syslog export validation.
 
-<<<<<<< HEAD
 * **[Module 2 - Splunk Deployment](./Module_2_Splunk_Deployment.md)**
-=======
-* **`Module2_Splunk_SIEM_Deployment.md`**
->>>>>>> cb5df841f0ba96c91ce8313546a2806c01c171e8
   * **Contents:** Documents the provisioning and hardening of the central Ubuntu Server running Splunk Enterprise (`10.0.100.10`). Covers OS performance tuning (4GB swap, limits.conf, sysctl), unprivileged service account management, UFW firewall rules, dedicated `opnsense` index creation, UDP syslog listener (`5140`), and the installation/configuration of the Splunk Add-on for OPNsense (`TA-opnsense`) for CIM-compliant field normalization.
 
 * **`Module3_Endpoint_Telemetry_Harden.md`**

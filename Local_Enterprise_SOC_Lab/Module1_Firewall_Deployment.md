@@ -220,5 +220,3 @@ To ensure the firewall configuration fulfills its design goals prior to any simu
 Module 1 successfully establishes a hardened, segmented network infrastructure with complete firewall logging. 
 
 ![OPNsense Dashboard](./Assets/OPNsense1.png)
-
-* **Next Document (Module 2):** *Splunk SIEM Enterprise Deployment, Index Design, Data Ingestion Pipelines, and Parsing (`TA-opnsense` & Universal Forwarder Configuration).*

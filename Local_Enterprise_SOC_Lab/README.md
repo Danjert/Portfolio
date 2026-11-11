@@ -20,11 +20,11 @@ The laboratory enforces strict Layer 3 isolation across four dedicated virtual s
 
 ```text
 Local_Enterprise_SOC_Lab/
-├── README.md                             # Repository overview & file index
-├── Module1_Firewall_Deployment.md        # Perimeter provisioning & ACLs
-├── Module2_Splunk_SIEM_Deployment.md     # SIEM setup, indexing & OPNsense TA
-├── Module3_Endpoint_Telemetry_Harden.md  # (Under Construction) Windows audit & Sysmon
-└── Module4_Threat_Simulations/           # (Under Construction) Adversary simulations
+├── README.md                               # Repository overview & file index
+├── Module1_Firewall_Deployment.md          # Perimeter provisioning & ACLs
+├── Module_2_Splunk_Deployment.md           # SIEM setup, indexing & OPNsense TA
+├── Module_3_WindowsEndpoint_Deployment.md  # Windows logs & Sysmon
+└── Module4_Threat_Simulations/             # (Under Construction) Adversary simulations
     ├── 01_Reconnaissance_Port_Scanning.md
     ├── 02_Credential_Access_BruteForce.md
     └── 03_Web_Application_Exploitation.md
@@ -40,8 +40,8 @@ Local_Enterprise_SOC_Lab/
 * **[Module 2 - Splunk Deployment](./Module_2_Splunk_Deployment.md)**
   * **Contents:** Documents the provisioning and hardening of the central Ubuntu Server running Splunk Enterprise (`10.0.100.10`). Covers OS performance tuning (4GB swap, limits.conf, sysctl), unprivileged service account management, UFW firewall rules, dedicated `opnsense` index creation, UDP syslog listener (`5140`), and the installation/configuration of the Splunk Add-on for OPNsense (`TA-opnsense`) for CIM-compliant field normalization.
 
-* **`Module3_Endpoint_Telemetry_Harden.md`**
-  * **Contents:** (Under Construction)
+* **[Module 3 - Windows Endpoint Deployment](./Module_3_WindowsEndpoint_Deployment.md)**
+  * **Contents:** Details the provisioning and onboarding of the Windows 11 Enterprise endpoint within the DMZ network segment (`10.0.50.100`). It covers advanced Windows audit policy hardening (Event IDs 4688 with command-line auditing and PowerShell script block logging 4104), Microsoft Sysmon deployment utilizing the hardened SwiftOnSecurity configuration, and the configuration and deployment of the Splunk Universal Forwarder to securely stream structured XML logs and Sysmon telemetry over TCP 9997 to the central Splunk indexer.
 
 * **`Module4_Threat_Simulations/`**
   * **Contents:** (Under Construction)

@@ -21,10 +21,12 @@ The laboratory enforces strict Layer 3 isolation across four dedicated virtual s
 ```text
 Local_Enterprise_SOC_Lab/
 ├── README.md                               # Repository overview & file index
-├── Module1_Firewall_Deployment.md          # Perimeter provisioning & ACLs
+├── Module_1_Firewall_Deployment.md         # Perimeter provisioning & ACLs
 ├── Module_2_Splunk_Deployment.md           # SIEM setup, indexing & OPNsense TA
 ├── Module_3_WindowsEndpoint_Deployment.md  # Windows logs & Sysmon
-└── Module4_Threat_Simulations/             # (Under Construction) Adversary simulations
+├── Module_4_IDS_Deployment.md              # Suricata IDS Deployment
+├── Module_5_WazuhEDR_Deployment.md         # (Under Construction)
+└── Module_6_Threat_Simulations/            # (Under Construction) Adversary simulations
     ├── 01_Reconnaissance_Port_Scanning.md
     ├── 02_Credential_Access_BruteForce.md
     └── 03_Web_Application_Exploitation.md
@@ -43,5 +45,11 @@ Local_Enterprise_SOC_Lab/
 * **[Module 3 - Windows Endpoint Deployment](./Module_3_WindowsEndpoint_Deployment.md)**
   * **Contents:** Details the provisioning and onboarding of the Windows 11 Enterprise endpoint within the DMZ network segment (`10.0.50.100`). It covers advanced Windows audit policy hardening (Event IDs 4688 with command-line auditing and PowerShell script block logging 4104), Microsoft Sysmon deployment utilizing the hardened SwiftOnSecurity configuration, and the configuration and deployment of the Splunk Universal Forwarder to securely stream structured XML logs and Sysmon telemetry over TCP 9997 to the central Splunk indexer.
 
-* **`Module4_Threat_Simulations/`**
+* **[Module 4 - Suricata IDS Deployment](./Module_4_IDS_Deployment.md)**
+  * **Contents:** Details the deployment and configuration of the Suricata Intrusion Detection System directly onto the OPNsense perimeter firewall (`10.0.100.1`). Covers PCAP live mode configuration, promiscuous mode mapping across segmented interfaces, Hyperscan pattern-matching optimization, Emerging Threats ruleset provisioning, and EVE JSON syslog streaming routed to Splunk (`10.0.100.10`) for automated field extraction and network threat monitoring.
+
+* **`Module_5_WazuhEDR_Deployment`**
+  * **Contents:** (Under Construction)
+
+* **`Module6_Threat_Simulations/`**
   * **Contents:** (Under Construction)

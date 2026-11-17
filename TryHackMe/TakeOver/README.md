@@ -1,13 +1,19 @@
-# TakeOver — Cloud Subdomain Takeover & Asset Visibility Assessment
+# TakeOver - Cloud Subdomain Takeover & Asset Visibility Assessment
 
 ## Overview
-This directory contains a multi-perspective security assessment of the **TakeOver** challenge. The scenario evaluates external perimeter exposure, virtual host enumeration, certificate analysis, and the risk of orphaned cloud infrastructure (forgotten DNS records pointing to unmanaged AWS S3 buckets).
+This directory contains a multi-perspective security assessment of the **TakeOver** Room (TryHackMe lab). The scenario evaluates external perimeter exposure, virtual host enumeration, certificate analysis, and the risk of forgotten DNS records or redirects that point to unmanaged cloud storage (AWS S3).
+
+> Performed only in an authorized lab environment. The flag value and the hidden hostname are masked in these documents.
 
 ## Repository Structure
-* [Executive Report & GRC Mapping (Executive-Report.md)](./Executive_Report.md) - Strategic business impact briefing, NIST CSF/SP 800-53 control mappings, Cyber Kill Chain and MITRE ATT&CK TTP alignment for leadership and GRC teams.
-* [Technical Walkthrough & Verification (Walkthrough.md)](./TakeOver.md) - Step-by-step technical methodology, commands, terminal output, and flag verification steps for SOC and penetration testing teams.
+
+| Document | Audience | Contents |
+| :--- | :--- | :--- |
+| [Executive Report](./Executive_Report.md) | Leadership, GRC | Business impact briefing, findings with a rating method and evidence references, Cyber Kill Chain and MITRE ATT&CK alignment, NIST CSF 2.0 and SP 800-53 mappings, recommendations and verification steps |
+| [Technical Walkthrough](./TakeOver.md) | SOC and penetration testing teams | Step-by-step methodology, commands, virtual host discovery, certificate analysis and redirect verification |
 
 ## Key Takeaways & Skills Demonstrated
-* **Attack Surface Management:** Identification of orphaned DNS CNAME records and unmanaged cloud endpoints.
-* **Enumeration:** Vhost discovery, HTTP header analysis, and SSL/TLS inspection.
-* **Framework Alignment:** Practical mapping across Lockheed Martin Cyber Kill Chain, MITRE ATT&CK, and NIST standards.
+- **Attack surface management:** Identification of hidden hostnames and redirects to unmanaged cloud endpoints.
+- **Enumeration:** Virtual host discovery, SSL/TLS certificate inspection.
+- **Framework alignment:** Mapping to the Cyber Kill Chain, MITRE ATT&CK and NIST, distinguishing between lab findings and potential real-world impact.
+- **Reporting:** Separate executive and technical deliverables with a stated rating method and evidence references.
